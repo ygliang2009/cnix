@@ -1,0 +1,10 @@
+megs: 32
+romimage: file=/usr/local/share/bochs/BIOS-bochs-latest
+vgaromimage: file=/usr/share/vgabios/vgabios.bin
+#floppya: 1_44=freedos.img, status=inserted
+floppya: 1_44=boot1201.img, status=inserted
+boot: a
+log: log/bochsout.txt
+mouse: enabled=0
+keyboard_mapping: enable=1, map=/usr/local/share/bochs/keymaps/x11-pc-us.map
+ata0-master: type=disk, path="conf/80m.img", mode=flat, cylinders=162, heads=16, spt=63
